@@ -25,7 +25,7 @@ const HomePage = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/sanpham")
+      .get("http://bobaduck.rf.gd/api/sanpham")
       .then((res) => {
         const products = res.data;
         const shuffled = [...products].sort(() => 0.5 - Math.random());
@@ -115,7 +115,7 @@ const HomePage = () => {
                     <div className="col-md-3 mb-3" key={product.ma_san_pham}>
                       <div className="card h-100">
                         <img
-                          src={`http://127.0.0.1:8000/images/${product.hinh_san_pham}.jpg`}
+                          src={`http://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                           className="card-img-top product-img"
                           alt={product.ten_san_pham}
                         />
@@ -153,7 +153,7 @@ const HomePage = () => {
               <div key={product.ma_san_pham} className="col-md-3 mb-4">
                 <div className="card h-100">
                   <img
-                    src={`http://127.0.0.1:8000/images/${product.hinh_san_pham}.jpg`}
+                    src={`http://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                     className="card-img-top product-img"
                     alt={product.ten_san_pham}
                   />
