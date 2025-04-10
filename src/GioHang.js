@@ -35,7 +35,7 @@ const GioHang = () => {
                   <td>{index + 1}</td>
                   <td>
                     <img
-                      src={`http://bobaduck.rf.gd/images/${item.hinh_san_pham}.jpg`}
+                      src={`https://bobaduck.rf.gd/images/${item.hinh_san_pham}.jpg`}
                       alt={item.ten_san_pham}
                       width="80"
                     />
