@@ -21,7 +21,7 @@ const ThanhToan = () => {
     const thongTinKhachHang = { ten, email, sdt, diaChi, thanhToan };
 
     try {
-      const res = await fetch("http://localhost:8080/api/dat-hang", {
+      const res = await fetch("http://bobaduck.rf.gd/api/dat-hang", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ thongTinKhachHang, gioHang, tongTien }),
@@ -61,7 +61,7 @@ const ThanhToan = () => {
                 <tr key={index}>
                   <td>
                     <img
-                      src={`http://127.0.0.1:8000/images/${sp.hinh_san_pham}.jpg`}
+                      src={`http://bobaduck.rf.gd/images/${sp.hinh_san_pham}.jpg`}
                       alt={sp.ten_san_pham}
                       width="50"
                     />
