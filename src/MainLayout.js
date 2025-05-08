@@ -39,8 +39,8 @@ const HomePage = () => {
     const fetchData = async () => {
       try {
         const [productsRes, categoriesRes] = await Promise.all([
-          axios.get("http://127.0.0.1:8000/api/sanpham"),
-          axios.get("http://127.0.0.1:8000/api/sanpham/danhmuc")
+          axios.get("https://bobaduck.rf.gd/api/sanpham"),
+          axios.get("https://bobaduck.rf.gd/api/sanpham/danhmuc")
         ]);
     
 
@@ -144,7 +144,7 @@ const HomePage = () => {
                       <div className="card h-100">
                         <Link to={`/san-pham/${product.ma_san_pham}`}>
                           <img
-                            src={`http://127.0.0.1:8000/images/${product.hinh_san_pham}.jpg`}
+                            src={`https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                             className="card-img-top product-img"
                             alt={product.ten_san_pham}
                           />
@@ -189,7 +189,7 @@ const HomePage = () => {
                   <div className="card h-100">
                     <Link to={`/san-pham/${product.ma_san_pham}`}>
                       <img
-                        src={`http://127.0.0.1:8000/images/${product.hinh_san_pham}.jpg`}
+                        src={`https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                         className="card-img-top product-img"
                         alt={product.ten_san_pham}
                       />
