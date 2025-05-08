@@ -39,8 +39,8 @@ const HomePage = () => {
     const fetchData = async () => {
       try {
         const [productsRes, categoriesRes] = await Promise.all([
-          axios.get("https://bobaduck.rf.gd/api/sanpham"),
-          axios.get("https://bobaduck.rf.gd/api/sanpham/danhmuc")
+          axios.get("https://morning-resonance-1c94.ncc9173.workers.dev/https://bobaduck.rf.gd/api/sanpham"),
+          axios.get("https://morning-resonance-1c94.ncc9173.workers.dev/https://bobaduck.rf.gd/api/sanpham/danhmuc")
         ]);
     
 
@@ -144,7 +144,7 @@ const HomePage = () => {
                       <div className="card h-100">
                         <Link to={`/san-pham/${product.ma_san_pham}`}>
                           <img
-                            src={`https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
+                            src={`https://morning-resonance-1c94.ncc9173.workers.dev/https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                             className="card-img-top product-img"
                             alt={product.ten_san_pham}
                           />
@@ -189,7 +189,7 @@ const HomePage = () => {
                   <div className="card h-100">
                     <Link to={`/san-pham/${product.ma_san_pham}`}>
                       <img
-                        src={`https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
+                        src={`https://morning-resonance-1c94.ncc9173.workers.dev/https://bobaduck.rf.gd/images/${product.hinh_san_pham}.jpg`}
                         className="card-img-top product-img"
                         alt={product.ten_san_pham}
                       />
